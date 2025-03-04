@@ -2,7 +2,7 @@
 
 ### Description
 
-The notebooks in this repo present a proposed solution to the [Actuarial Loss Prediction](https://www.kaggle.com/c/actuarial-loss-estimation) challenge on Kaggle. This solution is not fully developed, as it was completed within the time constraints of a technical test (approximately one week).
+The notebooks in this repo present a proposed solution to the [Actuarial Loss Prediction](https://www.kaggle.com/c/actuarial-loss-estimation) challenge on Kaggle. This solution is not fully developed, as it was completed within the time constraint of approximately one week (enough to test one approach of handling the categorical variables).
 
 ### File Contents
 * `1. exploration.ipynb`: Thorough exploration of numerical and categorical variables in the dataset, along with key insights.
@@ -22,4 +22,6 @@ The notebooks in this repo present a proposed solution to the [Actuarial Loss Pr
 The project was developed in **Python**, leveraging the standard Data Science stack (`pandas`, `scikit-learn`, `XGBoost`, `LightGBM`).  
 - **`Optuna`**: Used for hyperparameter optimization.  
 - **`MLFlow`**: Used for tracking experiments and model performance.  
-- **`K-Fold Cross-Validation (CV)`**: Used for all training processes to ensure robust model evaluation.  
+- **`K-Fold Cross-Validation (CV)`**: Used for all training processes to ensure robust model evaluation.
+- **`qwen2.5-0.5b-instruct`** Used for text extraction from the claim descriptions. Running locally on **LM Studio**.
+- **`nomic-embed-text-v1.5`** Used to convert text to embeddings. Running locally on **LM Studio**.
